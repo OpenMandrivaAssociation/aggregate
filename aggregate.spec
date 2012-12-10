@@ -43,3 +43,10 @@ rm -rf %{buildroot}
 %doc LICEN* HISTORY
 %{_bindir}/*
 %{_mandir}/man1/*
+
+
+%changelog
+* Wed Jun 15 2011 Jani Välimaa <wally@mandriva.org> 1.6-1mdv2011.0
++ Revision: 685433
+- import aggregate
+
