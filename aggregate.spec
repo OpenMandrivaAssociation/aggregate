@@ -1,11 +1,13 @@
 Summary:	Aggregate list of prefixes
 Name:		aggregate
 Version:	1.6
-Release:	%mkrel 1
+Release:	2
 License:	BSD-like
 Group:		Networking/Other
 Source0:	ftp://ftp.isc.org/isc/aggregate/%{name}-%{version}.tar.gz
 Url:		http://freshmeat.net/projects/aggregate
+
+%define debug_package %{nil}
 
 %description
 Aggregate takes a list of prefixes in conventional format on stdin,
@@ -28,18 +30,12 @@ chmod 644 LICE*
 %make
 
 %install
-rm -rf %{buildroot}
-
 install -d %{buildroot}{%{_bindir},%{_mandir}/man1}
 
 install -Dpm755 aggregate aggregate-ios %{buildroot}%{_bindir}
 install -Dpm644 aggregate.1 aggregate-ios.1 %{buildroot}%{_mandir}/man1
 
-%clean
-rm -rf %{buildroot}
-
 %files
-%defattr(-,root,root)
 %doc LICEN* HISTORY
 %{_bindir}/*
 %{_mandir}/man1/*
