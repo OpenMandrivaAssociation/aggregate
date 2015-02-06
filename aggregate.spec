@@ -1,7 +1,7 @@
 Summary:	Aggregate list of prefixes
 Name:		aggregate
 Version:	1.6
-Release:	2
+Release:	3
 License:	BSD-like
 Group:		Networking/Other
 Source0:	ftp://ftp.isc.org/isc/aggregate/%{name}-%{version}.tar.gz
