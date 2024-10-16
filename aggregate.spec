@@ -5,7 +5,7 @@ Release:	3
 License:	BSD-like
 Group:		Networking/Other
 Source0:	ftp://ftp.isc.org/isc/aggregate/%{name}-%{version}.tar.gz
-Url:		http://freshmeat.net/projects/aggregate
+Url:		https://freshmeat.net/projects/aggregate
 
 %define debug_package %{nil}
 
